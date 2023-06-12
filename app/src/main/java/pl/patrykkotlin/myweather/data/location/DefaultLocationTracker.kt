@@ -10,9 +10,10 @@ import androidx.core.content.ContextCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import kotlinx.coroutines.suspendCancellableCoroutine
 import pl.patrykkotlin.myweather.domain.location.LocationTracker
+import javax.inject.Inject
 import kotlin.coroutines.resume
 
-class DefaultLocationTracker(
+class DefaultLocationTracker @Inject constructor(
     private val locationClient: FusedLocationProviderClient,
     private val application: Application
 ) : LocationTracker {
