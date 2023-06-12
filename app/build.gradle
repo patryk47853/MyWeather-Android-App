@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "package pl.patrykkotlin.myweather"
+        applicationId "pl.patrykkotlin.myweather"
         minSdk 28
         targetSdk 33
         versionCode 1
