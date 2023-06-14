@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,10 +34,12 @@ class MainActivity : ComponentActivity() {
     private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
     private val gradient = Brush.linearGradient(
         colors = listOf(
-            Color(0xff6729d9), Color(0xff8e5fe3)
+            Color(0xFF9561A1),
+            Color(0xFF122259)
         ),
-        start = Offset(0f, 0f),
-        end = Offset(0f, Float.POSITIVE_INFINITY)
+        start = Offset.Zero,
+        end = Offset.Infinite,
+        tileMode = TileMode.Repeated
     )
 
 
