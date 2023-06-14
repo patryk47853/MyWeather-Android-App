@@ -1,5 +1,3 @@
-package pl.patrykkotlin.myweather.presentation
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,6 +21,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import pl.patrykkotlin.myweather.R
+import pl.patrykkotlin.myweather.presentation.WeatherDataDisplay
+import pl.patrykkotlin.myweather.presentation.WeatherState
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
@@ -35,7 +35,7 @@ fun WeatherCard(
     state.weatherInfo?.currentWeatherData?.let { data ->
         Card(
             backgroundColor = backgroundColor,
-            shape = RoundedCornerShape(10.dp),
+            shape = RoundedCornerShape(30.dp),
             modifier = modifier.padding(16.dp)
         ) {
             Column(
@@ -54,12 +54,14 @@ fun WeatherCard(
                     color = Color.White
                 )
                 Spacer(modifier = Modifier.height(16.dp))
-                Image(painter = painterResource(id = data.weatherType.iconRes),
+                Image(
+                    painter = painterResource(id = data.weatherType.iconRes),
                     contentDescription = null,
                     modifier = Modifier.width(200.dp)
                 )
                 Spacer(modifier = Modifier.height(16.dp))
-                Text(text = "${data.temperatureCelsius}°C",
+                Text(
+                    text = "${data.temperature}°C",
                     fontSize = 50.sp,
                     color = Color.White
                 )
