@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.presentation
+package pl.patrykkotlin.myweather.ui
 
 import WeatherCard
 import android.Manifest
@@ -25,7 +25,7 @@ import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import dagger.hilt.android.AndroidEntryPoint
-import pl.patrykkotlin.myweather.presentation.ui.theme.WeatherAppTheme
+import pl.patrykkotlin.myweather.ui.ui.theme.WeatherAppTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

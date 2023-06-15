@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.presentation.ui.theme
+package pl.patrykkotlin.myweather.ui.ui.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable

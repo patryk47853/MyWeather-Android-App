@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.presentation
+package pl.patrykkotlin.myweather.ui
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer

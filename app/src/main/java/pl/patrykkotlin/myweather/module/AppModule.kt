@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.di
+package pl.patrykkotlin.myweather.module
 
 import android.app.Application
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -7,7 +7,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import pl.patrykkotlin.myweather.data.remote.WeatherApi
+import pl.patrykkotlin.myweather.data.weather.WeatherApi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.create

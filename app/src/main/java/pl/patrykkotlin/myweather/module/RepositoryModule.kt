@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.di
+package pl.patrykkotlin.myweather.module
 
 import dagger.Binds
 import dagger.Module

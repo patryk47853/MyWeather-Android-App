@@ -1,7 +1,7 @@
 package pl.patrykkotlin.myweather.data.repository
 
 import pl.patrykkotlin.myweather.data.mappers.toWeatherInfo
-import pl.patrykkotlin.myweather.data.remote.WeatherApi
+import pl.patrykkotlin.myweather.data.weather.WeatherApi
 import pl.patrykkotlin.myweather.domain.repository.WeatherRepository
 import pl.patrykkotlin.myweather.domain.util.Resource
 import pl.patrykkotlin.myweather.domain.weather.WeatherInfo

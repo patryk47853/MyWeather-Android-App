@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.data.remote
+package pl.patrykkotlin.myweather.data.weather
 
 import retrofit2.http.GET
 import retrofit2.http.Query

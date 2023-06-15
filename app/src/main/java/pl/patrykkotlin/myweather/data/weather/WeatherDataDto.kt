@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.data.remote
+package pl.patrykkotlin.myweather.data.weather
 
 import com.squareup.moshi.Json
 

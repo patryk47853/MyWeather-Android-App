@@ -21,8 +21,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import pl.patrykkotlin.myweather.R
-import pl.patrykkotlin.myweather.presentation.WeatherDataDisplay
-import pl.patrykkotlin.myweather.presentation.WeatherState
+import pl.patrykkotlin.myweather.ui.WeatherDataDisplay
+import pl.patrykkotlin.myweather.ui.WeatherState
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 

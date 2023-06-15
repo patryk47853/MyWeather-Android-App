@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.presentation.ui.theme
+package pl.patrykkotlin.myweather.ui.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

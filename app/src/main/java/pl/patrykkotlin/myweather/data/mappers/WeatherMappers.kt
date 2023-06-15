@@ -1,7 +1,7 @@
 package pl.patrykkotlin.myweather.data.mappers
 
-import pl.patrykkotlin.myweather.data.remote.WeatherDataDto
-import pl.patrykkotlin.myweather.data.remote.WeatherDto
+import pl.patrykkotlin.myweather.data.weather.WeatherDataDto
+import pl.patrykkotlin.myweather.data.weather.WeatherDto
 import pl.patrykkotlin.myweather.domain.weather.WeatherData
 import pl.patrykkotlin.myweather.domain.weather.WeatherInfo
 import pl.patrykkotlin.myweather.domain.weather.WeatherType

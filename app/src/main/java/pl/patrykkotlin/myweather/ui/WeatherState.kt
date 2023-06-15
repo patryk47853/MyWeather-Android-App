@@ -1,4 +1,4 @@
-package pl.patrykkotlin.myweather.presentation
+package pl.patrykkotlin.myweather.ui
 
 import pl.patrykkotlin.myweather.domain.weather.WeatherInfo
 
