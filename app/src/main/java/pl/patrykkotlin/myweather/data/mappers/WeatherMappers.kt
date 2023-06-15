@@ -20,21 +20,21 @@ fun WeatherDataDto.toWeatherDataMap(): Map<Int, List<WeatherData>> {
         val windSpeed = windSpeeds[index]
         val pressure = pressures[index]
         val humidity = humidities[index]
-        IndexedWeatherData (
+        IndexedWeatherData(
             index = index,
             data = WeatherData(
-            time = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME),
-            temperature = temperature,
-            windSpeed = windSpeed,
-            pressure = pressure,
-            humidity = humidity,
-            weatherType = WeatherType.fromWMO(weatherCode)
+                time = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME),
+                temperature = temperature,
+                windSpeed = windSpeed,
+                pressure = pressure,
+                humidity = humidity,
+                weatherType = WeatherType.fromWMO(weatherCode)
             )
-                )
+        )
     }.groupBy {
         it.index / 24 // This groups the data into 24-hour chunks, representing one day each.
     }.mapValues {
-        it.value.map { it.data }
+        it.value.map { it -> it.data }
     }
 }
 
@@ -42,7 +42,7 @@ fun WeatherDto.toWeatherInfo(): WeatherInfo {
     val weatherDataMap = weatherData.toWeatherDataMap()
     val now = LocalDateTime.now()
     val currentWeatherData = weatherDataMap[0]?.find {
-        val hour = if(now.minute < 30) now.hour else now.hour + 1
+        val hour = if (now.minute < 30) now.hour else now.hour + 1
         it.time.hour == hour
     }
     return WeatherInfo(
