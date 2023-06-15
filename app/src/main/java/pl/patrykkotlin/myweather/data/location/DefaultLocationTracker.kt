@@ -32,7 +32,6 @@ class DefaultLocationTracker @Inject constructor(
         }
 
         val locationRequest = LocationRequest.create()
-            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1)
 
         return suspendCancellableCoroutine { cont ->
