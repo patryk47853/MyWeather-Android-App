@@ -8,7 +8,7 @@
 
 ### 🌦 Why app like this?
 
-#### I have actually created a weather app as a Java Spring Boot project. I found it very enjoyable as it allowed me to utilize various tools such as frameworks and learn how to work with REST API services. Additionally, I always wanted to customize a basic weather app on my phone according to my preferences.
+#### I have actually created a weather app as a Java Spring Boot project. I found it very enjoyable as it allowed me to use various tools such as frameworks and learn how to work with REST API services. Additionally, I always wanted to customize a basic weather app on my phone according to my preferences.
 
 ### 🌧 Technologies:
 - Backend: Kotlin, Dagger - Hilt, Location Services
